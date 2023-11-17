@@ -1,0 +1,12 @@
+import RPi.GPIO as g
+g.setmode (g.BOARD)
+g.setup(12,g.IN)
+g.setup(22,g.0UT)
+while True:
+	var=g.input(12)
+	print (var)
+	if vae == 0:
+		g.output (22, True)
+	else:
+		g.output (22, False)
+g.cleanup ()
